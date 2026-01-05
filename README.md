@@ -25,18 +25,22 @@ python train_VRDD.py
 
 #### Test a single checkpoint (default: runs both TEST and OOD/VAL)
 ```bash
-python test.py Lambdas_MaxVALAcc_0.9311.bin
+python test_VRDD.py Lambdas_MaxVALAcc_0.9311.bin
 ```
 
 #### Test multiple checkpoints (batch comparison)
 ```bash
-python test.py A.bin B.bin C.bin
+python test_VRDD.py A.bin B.bin C.bin
 ```
 
 #### OOD only
 ```bash
-python test.py Lambdas_MaxVALAcc_0.9311.bin --run ood
+python test_VRDD.py Lambdas_MaxVALAcc_0.9311.bin --run ood
 ```
 
 ## Data Availability
-All datasets and processed files will be released after the paper is accepted.
+All datasets and processed files will be released after the paper is accepted.  
+To evaluate VRDD OOD results, please use:
+```bash
+python test_VRDD.py A.bin B.bin C.bin
+
