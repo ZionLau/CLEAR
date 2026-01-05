@@ -40,7 +40,3 @@ python test_VRDD.py Lambdas_MaxVALAcc_0.9311.bin --run ood
 
 ## Data Availability
 All datasets and processed files will be released after the paper is accepted.  
-To evaluate VRDD OOD results, please use:
-```bash
-python test_VRDD.py A.bin B.bin C.bin
-
